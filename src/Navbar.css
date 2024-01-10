@@ -1,0 +1,54 @@
+.navigation {
+    width: auto;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.navigation .navigation__links {
+    margin-left: auto;
+}
+.navigation__menu {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+
+}
+.navigation__item {
+    text-align: center;
+}
+.navigation a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(229, 31%, 21%);
+    margin-right: 3rem;
+    text-decoration: none;
+    padding: 6px;
+}
+.navbar .a:visited, a:hover, a:active {
+    color: hsl(0, 94%, 66%);
+}
+.btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 1rem;
+    transition: all .1s;
+}
+.btn:hover {
+    color: hsl(0, 94%, 66%);
+    background-color: #f2f2f2;
+    border: .2rem solid hsl(0, 94%, 66%);
+}
+.btn__login {
+    background-color:hsl(0, 94%, 66%) ;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 4rem;
+    margin-right: 5rem;
+}
