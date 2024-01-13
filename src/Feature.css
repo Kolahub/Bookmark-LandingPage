@@ -2,6 +2,9 @@
     max-width: 130rem;
     margin: 0 auto;
     height: 100vh;
+    @media only screen and (max-width: 56.25em) {
+        max-width: 70rem;
+    }
 }
 .feature__header {
     text-align: center;
@@ -101,6 +104,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
+    @media only screen and (max-width: 56.25em) {
+        display: block;
+    }
 }
 .feature__left{
     position: relative;
@@ -139,6 +145,9 @@
 }
 .feature__right {
     max-width: 50rem;
+    @media only screen and (max-width: 56.25em) {
+        margin-top: 7rem;
+    }
     h1 {
         font-size: 3.5rem;
         color: hsl(229, 31%, 21%);

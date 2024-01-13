@@ -3,6 +3,10 @@
     max-width: 50rem;
     margin: 4rem auto 10rem auto;
 
+    @media only screen and (max-width: 56.25em) {
+        margin: 22rem auto 10rem auto;
+    }
+
     h1{
         font-size: 2.5rem;
         text-transform: uppercase;
@@ -84,6 +88,66 @@ width: 22rem;
     background-color: hsl(0, 0%, 100%);
     color: hsl(231, 69%, 60%);
 } 
+.pricing__faq {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+.pricing__faq--typo {
+    text-align: center;
+    h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: hsl(229, 31%, 21%);
+    }
+    p{
+        font-size: 1.8rem;
+        color: hsl(229, 8%, 60%);
+    }
+}
+.pricing__faq--main {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.selectfield {
+    border-bottom:.5px solid hsl(229, 8%, 60%);
+    &:first-child {
+        border-top: .1rem solid hsl(229, 8%, 60%) !important;
+    }
+}
+.selectquestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: hsl(229, 31%, 21%);
+    font-weight: 600;
+    padding: 0 1.2rem 0 0;
+}
+.rotate {
+    transform: rotate(180deg);
+    filter: invert(51%) sepia(74%) saturate(1334%) hue-rotate(323deg) brightness(100%) contrast(100%);
+}
+.selectanswer {
+    font-size: 1.5rem;
+    color: hsl(229, 8%, 60%);
+}
+.faqMoreInfor__btn {
+    margin-top: 5rem;
+    background-color: hsl(231, 69%, 60%);
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .1s;
+    &:hover {
+        border: .2rem solid hsl(231, 69%, 60%);
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(231, 69%, 60%);
+    }
+}
 .hidden {
     display: none;
 }
