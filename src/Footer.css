@@ -1,6 +1,11 @@
 .footer {
     height: 10rem;
     background-color: hsl(229, 31%, 21%);
+    @media only screen and (max-width: 28.125em) {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        width: 190%;
+    }
 }
 .footer--container {
     width: auto;
@@ -12,12 +17,19 @@
     margin: 0 auto;
 
     @media only screen and (max-width: 56.25em) {
-        max-width: 70rem;
+        max-width: 10rem;
+    }
+
+    @media only screen and (max-width: 28.125em) {
+        display: block;
     }
 }
 .footer--left {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 28.125em) {
+        display: block;
+    }
 }
 .footer .footer__links {
     margin-left: auto;
@@ -26,6 +38,9 @@
     display: flex;
     list-style: none;
     overflow: hidden;
+    @media only screen and (max-width: 28.125em) {
+        display: block;
+    }
 
 }
 .footer__item {

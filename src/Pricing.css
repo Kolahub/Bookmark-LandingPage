@@ -6,7 +6,6 @@
     @media only screen and (max-width: 56.25em) {
         margin: 22rem auto 10rem auto;
     }
-
     h1{
         font-size: 2.5rem;
         text-transform: uppercase;
@@ -15,6 +14,18 @@
     p{
         font-size: 1.8rem;
         color: hsl(229, 8%, 60%);
+    }
+    @media only screen and (max-width: 28.125em) {
+        padding-top: 95rem;
+        transform: translateX(14%);
+        h1{
+            font-size: 4.5rem;
+            width: 75rem;
+        }
+        p{
+            font-size: 3.8rem;
+            width: 75rem;
+        }
     }
 }
 .pricing__exGrid {
@@ -25,7 +36,6 @@
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-
     h2 {
         font-size: 1.5rem;
         color: hsl(229, 31%, 21%);
@@ -36,6 +46,22 @@
         color: hsl(229, 8%, 60%);
         margin: 0;
     }
+     @media only screen and (max-width: 28.125em) {
+        grid-template-columns: 1fr;
+        margin-top: 15rem;
+        transform: translateX(28%);
+
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+            transform: translate(-5%, 38rem);
+        }
+        p {
+            font-size: 4rem;
+            text-align: center;
+            transform: translate(-5%, 38rem);
+        }
+    }
 }
 .ex {
     position: relative;
@@ -45,34 +71,63 @@
     box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
     border-radius: 1.2rem;
     margin-bottom: 10rem;
+    @media only screen and (max-width: 28.125em) {
+        width: 55rem;
+        height: 70rem;
+        /* img {
+            width: 20rem;
+        } */
+    }
+}
+.ex--con {
+    @media only screen and (max-width: 28.125em) { 
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
 }
 .ex--pic {
-
+    @media only screen and (max-width: 28.125em) { 
+        width: 25rem;
+    }
 }
 .ex--1 {
     margin-top: -12rem;
+    @media only screen and (max-width: 28.125em) {
+        margin-top: 1rem;
+    }
 }
 .ex--2 {
     margin-top: -4rem;
+    @media only screen and (max-width: 28.125em) {
+        margin-top: 1rem;
+    }
 }
 .ex--3 {
     margin-top: 4rem;
+    @media only screen and (max-width: 28.125em) {
+        margin-top: 1rem;
+    }
 }
 .dotted--line  {
     position: absolute;
     top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* @media only screen and (max-width: 28.125em) { 
+        top: 50%;
+    } */
 }
 
 .dotted--line__pic {
 width: 22rem;
+@media only screen and (max-width: 28.125em) { 
+    width: 52rem;
+}
 }
 .ex--btn {
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    transform: translate(-50, -50);
     bottom: 2rem;
     left: 4.5rem;
     color: white;
@@ -81,7 +136,14 @@ width: 22rem;
     border-radius: .6rem;
     padding: 1rem;
     margin: auto;
-    width: 50%;
+    width: 50%; 
+    @media only screen and (max-width: 28.125em) { 
+        width: 80%; 
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 3rem;
+    }
 }
 .ex--btn:hover {
     border: .2rem solid hsl(231, 69%, 60%);
@@ -91,6 +153,9 @@ width: 22rem;
 .pricing__faq {
     margin: 0 auto;
     max-width: 50rem;
+    @media only screen and (max-width: 28.125em) { 
+        transform: translateX(40%);
+    }
 }
 .pricing__faq--typo {
     text-align: center;
