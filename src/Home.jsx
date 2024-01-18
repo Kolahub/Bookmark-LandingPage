@@ -23,7 +23,7 @@ function Home() {
         <img className="home__right--bg__pic" src={BgDots} alt="React Logo" />
         </div>
         <div className="home__right--sketch">
-          ygiugy
+          
         </div>
         </div>
     </div>

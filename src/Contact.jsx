@@ -12,7 +12,6 @@ function Contact() {
       </div>
       <div className="contact--main">
         <input type="email" placeholder='Enter your email'/>
-        <p></p>
         <div className="contactUS__btn">Contact Us</div>
       </div>
       </div>

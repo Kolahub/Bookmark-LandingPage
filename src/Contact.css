@@ -1,10 +1,7 @@
 .contact {
-    height: 30rem;
+    padding: 20rem 0;
     background-color: hsl(231, 69%, 60%);
     position: relative;
-    @media only screen and (max-width: 28.125em) { 
-        width: 190%;
-    }
 }
 .contact--container {
     max-width: 45rem;
@@ -13,9 +10,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @media only screen and (max-width: 28.125em) { 
-        transform: translate(-50%, -60%);
-    }
 }
 .contact--typo {
     color: rgb(255, 255, 255);
@@ -63,6 +57,13 @@
             background-color: rgb(255, 255, 255);
             color: hsl(0, 94%, 66%);
             border: .3rem solid hsl(0, 94%, 66%);;
+        }
+    }
+    @media only screen and (max-width: 28.125em) { 
+        flex-direction: column;
+        div {
+            width: 95%;
+            margin-top: 2rem;
         }
     }
 }

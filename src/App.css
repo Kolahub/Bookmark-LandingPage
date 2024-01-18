@@ -1,7 +1,11 @@
 html {
   font-size: 62.5%; 
   @media only screen and (max-width: 56.25em) { 
+    font-size: 56.25%;
+  }
+  @media only screen and (max-width: 28.125em) { 
     font-size: 50%;
+    overflow-x: hidden !important;
   }
 }
 
@@ -10,6 +14,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+
   /* background-color: hsl(229, 100%, 97%);  */
 }

@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import "./Navbar.css";
+import iconFacebook from './images/icon-facebook.svg';
+import iconTwitter from './images/icon-twitter.svg';
+
 function Navbar() {
   return (
     <div>
         <nav className="navigation">
           <div className="nav--content">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
               <label for="navi-toggle" class="navigation__button">
               <span class="navigation__icon">&nbsp;</span>
               </label>
@@ -18,6 +21,10 @@ function Navbar() {
               <li className="navigation__item"><Link to='contact' spy={true} smooth={true} offset={-105} duration={500} className='navigation__lists'>Contact</Link></li>
               </ul>
               <div className="btn btn__login">Login</div>
+              <div className="navigation--bottom">
+            <img src={iconFacebook} alt="" />
+            <img src={iconTwitter} alt="" />
+        </div>
             </div>
             </div>
         </nav>

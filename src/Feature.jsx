@@ -123,15 +123,15 @@ function Feature() {
       <div className="feature__tab">
         <div className="feature__tab--option">
           <div className="feature__tab--option__one">
-            <button onClick={handleClickMain}>Simple Bookmarking</button>{" "}
+            <div onClick={handleClickMain}>Simple Bookmarking</div>{" "}
             <div className="feature__tab--option__one--line "></div>
           </div>
           <div className="feature__tab--option__two">
-            <button onClick={handleClick}>Speedy Searching</button>{" "}
+            <div onClick={handleClick}>Speedy Searching</div>{" "}
             <div className="feature__tab--option__two--line hidden"></div>
           </div>
           <div className="feature__tab--option__three">
-            <button onClick={handleClickLast}>Easy Sharing</button>{" "}
+            <div onClick={handleClickLast}>Easy Sharing</div>{" "}
             <div className="feature__tab--option__three--line hidden"></div>
           </div>
         </div>

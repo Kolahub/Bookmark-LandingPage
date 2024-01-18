@@ -5,17 +5,18 @@
     justify-content: space-between;
     max-width: 130rem;
     margin: 0 auto;
-    padding-top: 12rem;
+    padding: 8rem 0;
     @media only screen and (max-width: 56.25em) {
         display: block;
         max-width: 70rem;
-    }
+    } 
     @media only screen and (max-width: 28.125em) {
-        padding-top: 25rem;
+        padding: 15rem 0;
+        width: 100% !important;
     }
 }
 .home__left {
-    max-width: 60rem;
+    width: 60rem;
     margin: 0 auto;
     h1 {
         font-size: 6rem;
@@ -26,19 +27,14 @@
         color: hsl(229, 8%, 60%);
     }
     @media only screen and (max-width: 28.125em) {
-        transform: translate(45%, 60rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 38rem;
+        transform: translateY(34rem);
+        text-align: center;
         h1 {
-            font-size: 7rem;
-            text-align: center;
-            width: 75rem;
-        }
-        p{
             font-size: 4rem;
-            text-align: center;
-            width: 75rem;
+        }
+        p {
+            font-size: 2rem;
         }
     }
 }
@@ -47,8 +43,10 @@
     font-weight: 600;
     font-size: 1.2rem;
     @media only screen and (max-width: 28.125em) { 
-        font-size: 3rem;
-        transform: translateX(.1rem);
+        font-size: 2rem;
+        max-width: 40rem;
+        transform: translateY(3rem);
+        margin:0 auto;
     }
 }
 .home__left--btn__chrome {
@@ -65,11 +63,11 @@
         border: .2rem solid hsl(231, 69%, 60%);
     }
 
-    @media only screen and (max-width: 28.125em) { 
+    /* @media only screen and (max-width: 28.125em) { 
         width: 30rem;
         margin-right: 3rem;
         padding: 2.5rem;
-    }
+    } */
 }
 .home__left--btn__firefox {
     background-color:hsl(0, 0%, 100%);
@@ -85,15 +83,15 @@
         border: .2rem solid hsl(0, 0%, 0%);
     }
 
-    @media only screen and (max-width: 28.125em) { 
+    /* @media only screen and (max-width: 28.125em) { 
         width: 30rem;
         padding: 2.5rem;
-    }
+    } */
 }
 .home__right {
     position:relative;
     @media only screen and (max-width: 28.125em) {
-        transform: translateY(-60rem);
+        transform: translateY(-28rem);
     }
 }
 .home__right--bg__pic {
@@ -105,8 +103,8 @@
         left:5%;
     }
     @media only screen and (max-width: 28.125em) {
-        width: 80rem;
-        left: 8%;
+        width: 43rem;
+        left: 6%;
     }
 }
 
@@ -120,6 +118,8 @@
     border-radius: 0 0 0 12rem;
     background-color: hsl(231, 69%, 60%);
     @media only screen and (max-width: 28.125em) {
-        height:45rem;
+        left: 22%;
+        top: 8rem;
+        height:22rem;
     }
 }
