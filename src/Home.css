@@ -5,9 +5,9 @@
     justify-content: space-between;
     max-width: 130rem;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 12rem 0;
     @media only screen and (max-width: 56.25em) {
-        display: block;
+        flex-direction: column;
         max-width: 70rem;
     } 
     @media only screen and (max-width: 28.125em) {
@@ -26,6 +26,9 @@
         font-size: 1.5rem;
         color: hsl(229, 8%, 60%);
     }
+    @media only screen and (max-width: 56.25em) {
+        margin-bottom: 4rem;
+    } 
     @media only screen and (max-width: 28.125em) {
         width: 38rem;
         transform: translateY(34rem);
@@ -62,12 +65,6 @@
         color: hsl(231, 69%, 60%);
         border: .2rem solid hsl(231, 69%, 60%);
     }
-
-    /* @media only screen and (max-width: 28.125em) { 
-        width: 30rem;
-        margin-right: 3rem;
-        padding: 2.5rem;
-    } */
 }
 .home__left--btn__firefox {
     background-color:hsl(0, 0%, 100%);
@@ -82,16 +79,11 @@
         color: hsl(0, 0%, 7%);
         border: .2rem solid hsl(0, 0%, 0%);
     }
-
-    /* @media only screen and (max-width: 28.125em) { 
-        width: 30rem;
-        padding: 2.5rem;
-    } */
 }
 .home__right {
     position:relative;
     @media only screen and (max-width: 28.125em) {
-        transform: translateY(-28rem);
+        transform: translateY(-32rem);
     }
 }
 .home__right--bg__pic {
