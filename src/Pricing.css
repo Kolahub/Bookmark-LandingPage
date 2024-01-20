@@ -1,7 +1,10 @@
 .pricing {
   padding:0 0 15rem 0;
+  @media only screen and (max-width: 56.25em) {
+    margin-top: 22rem;
+  }
   @media only screen and (max-width: 28.125em) {
-    padding:5rem 0 10rem 0;
+    padding:0 0 10rem 0;
   }
 }
 .pricing__exTypo {
@@ -18,7 +21,7 @@
     color: hsl(229, 8%, 60%);
   }
   @media only screen and (max-width: 28.125em) {
-    max-width: 40rem;
+    width: 80%;
   }
 }
 .pricing__exGrid {
@@ -128,7 +131,8 @@
   max-width: 50rem;
   margin-top: 9rem;
   @media only screen and (max-width: 28.125em) { 
-    max-width: 40rem;
+    margin-top: 0;
+    width: 80%;
     }
 }
 .pricing__faq--typo {
@@ -184,7 +188,7 @@
   transition: all 0.1s;
   @media only screen and (max-width: 28.125em) { 
     width: 16rem;
-    height: 7rem;
+    height: 5rem;
     font-size: 1.8rem;
     }
   &:hover {

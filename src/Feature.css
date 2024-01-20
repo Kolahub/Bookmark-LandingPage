@@ -7,12 +7,12 @@
     }
 
     @media only screen and (max-width: 28.125em) {
-        padding: 10rem 0 30rem 0;
+        padding: 0 0 20rem 0;
     }
 }
 .feature__header {
     text-align: center;
-    width: 50rem;
+    width: 60%;
     margin: 0 auto;
     h1{
         font-size: 2.5rem;
@@ -23,8 +23,13 @@
         font-size: 2rem;
         color: hsl(229, 8%, 60%);
     }
+    @media only screen and (max-width: 56.25em) { 
+        p{
+            font-size: 1.8rem;
+        }
+    }
     @media only screen and (max-width: 28.125em) {
-        width: 40rem;
+        width: 80%;
     }
 }
 
@@ -35,12 +40,10 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: -2rem;
-    /* margin-bottom: 4rem; */
     height: 5rem;
     padding: 0 2rem 2rem 2rem;
-    /* font-size: 2rem; */
     @media only screen and (max-width: 28.125em) {
-        width: 40rem;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -52,7 +55,7 @@
     position: relative;
     div {
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
         color: hsl(229, 31%, 21%);
         cursor: pointer;
@@ -91,7 +94,7 @@
     position: relative;
     div {
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
         color: hsl(229, 31%, 21%);
         cursor: pointer;
@@ -129,7 +132,7 @@
         width: auto;
         height: auto;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
         color: hsl(229, 31%, 21%);
         cursor: pointer;
@@ -176,7 +179,7 @@
 }
 .feature__left{
     position: relative;
-    width: auto;
+    width: 50%;
     height: auto;
     span {
         position:absolute;
@@ -187,11 +190,17 @@
         height:37rem;
         border-radius: 0 0 12rem 0;
         background-color: hsl(231, 69%, 60%);
-        @media only screen and (max-width: 28.125em) { 
-            height:25rem;
-            top: 6rem;
-            right: 15%;
+        @media only screen and (max-width: 56.25em) {
+            right: -40%;
         }
+        @media only screen and (max-width: 28.125em) { 
+            height:23rem;
+            top: 6rem;
+            right: -60%;
+        }
+    }
+    @media only screen and (max-width: 56.25em) { 
+        transform: translateY(20rem);
     }
     @media only screen and (max-width: 28.125em) { 
         transform: translateY(28rem);
@@ -207,6 +216,11 @@
     position: relative;
     left: 20%;
     top: -1rem;
+
+    @media only screen and (max-width: 28.125em) {  
+        left: 30%;
+        top: -2rem;
+    }
 }
 .tabSpan {
     top: 11rem;
@@ -220,7 +234,7 @@
         width: 58rem !important;
     }
     @media only screen and (max-width: 28.125em) { 
-        width: 39rem !important;
+        width: 36rem !important;
     }
 }
 .feature__tab--preview__three--left__pic {
@@ -229,17 +243,18 @@
         width: 58rem !important;
     }
     @media only screen and (max-width: 28.125em) { 
-        width: 39rem !important;
+        width: 36rem !important;
     }
 }
 .feature__pic {
     width: 65rem;
     @media only screen and (max-width: 28.125em) { 
-        width: 43rem;
+        width: 38rem;
     }
 }
 .feature__right {
-    width: 50rem;
+    width: 50%;
+    max-width: 50rem;
     h1 {
         font-size: 3.5rem;
         color: hsl(229, 31%, 21%);
@@ -249,15 +264,21 @@
         color: hsl(229, 8%, 60%);
     }
     @media only screen and (max-width: 56.25em) {
-        margin-top: 7rem;
+        /* margin-top: 7rem; */
+        width: 100%;
+        max-width: 60rem;
+        margin: 0 auto;
+        transform: translateY(25rem);
     }
     @media only screen and (max-width: 28.125em) {
-        width: 35rem;
-        margin: 0 auto;
+        width: 80%;
         transform: translateY(35rem);
         text-align: center;
         h1 {
             font-size: 2.8rem;
+        }
+        p {
+            font-size: 1.6rem;
         }
     }
 }
@@ -271,7 +292,6 @@
     font-size: 1.4rem;
     cursor: pointer;
     transition: all .1s;
-
     @media only screen and (max-width: 28.125em) { 
         display: none;
     }

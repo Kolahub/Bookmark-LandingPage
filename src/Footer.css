@@ -16,6 +16,9 @@ bottom: 0;
     align-items: center;
     max-width: 130rem;
     margin: 0 auto;
+    @media only screen and (max-width: 56.25em) {
+        max-width: 76rem;
+      }
     @media only screen and (max-width: 28.125em) {
         flex-direction: column;
         position: absolute;

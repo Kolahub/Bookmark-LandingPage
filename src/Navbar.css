@@ -17,13 +17,18 @@
     align-items: center;
     max-width: 130rem;
     margin: 0 auto;
+    @media only screen and (max-width: 56.25em) {
+        max-width: 76rem;
+      }
     @media only screen and (max-width: 28.125em) { 
-        max-width: 40rem;
+        max-width: 90%;
         height: 12rem;
     }
 }
 .navigation__title {
-    
+    /* @media only screen and (max-width: 28.125em) { 
+        margin-left: .6rem;
+    } */
 }
 .navigation__checkbox {
     display: none; }
@@ -66,7 +71,7 @@
     @media only screen and (max-width: 28.125em) { 
         display: block;
         position: absolute;
-        top: 22%;
+        top: 30%;
         left: 58.4%;
         transform: translate(-50%, -50%);
         list-style: none;
@@ -143,7 +148,7 @@
       .navigation__icon {
         position: relative;
         margin-top: 8rem;
-        right: 10rem;
+        right: 5.8rem;
 }
         .navigation__icon, .navigation__icon::before, .navigation__icon::after {
           width: 3rem;

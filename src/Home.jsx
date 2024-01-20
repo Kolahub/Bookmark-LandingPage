@@ -19,11 +19,8 @@ function Home() {
       </div>
       
       <div className="home__right">
-        <div className="home__right--bg">
         <img className="home__right--bg__pic" src={BgDots} alt="React Logo" />
-        </div>
         <div className="home__right--sketch">
-          
         </div>
         </div>
     </div>
