@@ -286,7 +286,7 @@
 }
 @media only screen and (max-width: 28.125em) { 
     .tabMain { 
-    left: 30%;
+    left: 20%;
     top: -2rem;
     }
 }
@@ -300,34 +300,41 @@
     .tabSpan {
         top: 18rem !important;
         left:-15%;
-        width:100rem;
         height:38rem !important;
+    }
+
+}
+@media only screen and (max-width: 28.125em) {
+    .tabSpan {
+        top: 10rem !important;
+        width:38rem !important;
+        height:20rem !important;
     }
 }
 .feature__tab--preview__two--left__pic {
-    width: 56rem;
+    width: 56rem important;
 }
 @media only screen and (max-width: 56.25em) {
     .feature__tab--preview__two--left__pic {
-    width: 58rem;
+    width: 58rem important;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .feature__tab--preview__two--left__pic { 
-    width: 36rem;
+    width: 36rem !important;
     }
 }
 .feature__tab--preview__three--left__pic {
-    width: 56rem;
+    width: 56rem important;
 }
 @media only screen and (max-width: 56.25em) {
     .feature__tab--preview__three--left__pic {
-    width: 58rem;
+    width: 58rem important;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .feature__tab--preview__three--left__pic { 
-    width: 36rem;
+        width: 36rem !important;
     }
 }
 .feature__pic {
