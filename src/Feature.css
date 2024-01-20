@@ -233,7 +233,11 @@
     border-radius: 0 0 12rem 0;
     background-color: hsl(231, 69%, 60%);
 }
-
+@media only screen and (max-width: 81.25em) { 
+    .feature__left span {  
+        right: 10%;
+    }
+}
 @media only screen and (max-width: 56.25em) { 
     .feature__left span {  
         right: -40%;
@@ -264,12 +268,22 @@
         left: 10% !important;
     }
 } 
+@media only screen and (max-width: 81.25em) { 
+    .feature__tab--preview__one--left__con {
+        position: relative;
+        left: 10%;
+    }
+}
 .tabMain {
     position: relative;
     left: 20%;
     top: -1rem;
 }
-
+@media only screen and (max-width: 81.25em) { 
+    .tabMain {
+        left: 12%;
+    }
+}
 @media only screen and (max-width: 28.125em) { 
     .tabMain { 
     left: 30%;
@@ -282,17 +296,25 @@
     width:100rem;
     height:37rem;
 }
+@media only screen and (max-width: 81.25em) { 
+    .tabSpan {
+        top: 18rem !important;
+        left:-15%;
+        width:100rem;
+        height:38rem !important;
+    }
+}
 .feature__tab--preview__two--left__pic {
     width: 56rem;
 }
 @media only screen and (max-width: 56.25em) {
     .feature__tab--preview__two--left__pic {
-    width: 58rem !important;
+    width: 58rem;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .feature__tab--preview__two--left__pic { 
-    width: 36rem !important;
+    width: 36rem;
     }
 }
 .feature__tab--preview__three--left__pic {
@@ -300,12 +322,12 @@
 }
 @media only screen and (max-width: 56.25em) {
     .feature__tab--preview__three--left__pic {
-    width: 58rem !important;
+    width: 58rem;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .feature__tab--preview__three--left__pic { 
-    width: 36rem !important;
+    width: 36rem;
     }
 }
 .feature__pic {
@@ -316,6 +338,11 @@
     width: 38rem;
     }
 }
+@media only screen and (max-width: 81.25em) {
+    .feature__pic {
+        right: 50%;
+        }
+}
 .feature__right {
     width: 50%;
     max-width: 50rem;
@@ -324,21 +351,18 @@
     font-size: 3.5rem;
     color: hsl(229, 31%, 21%);
 }
-@media only screen and (max-width: 28.125em) { 
-    .feature__right h1{  
-        font-size: 2.8rem;
-    }
-}
 .feature__right p{ 
     font-size: 2rem;
     color: hsl(229, 8%, 60%);
 }
-@media only screen and (max-width: 28.125em) { 
-    .feature__right p{  
-        font-size: 1.6rem;
+@media only screen and (max-width: 81.25em) {
+    .feature__right {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    margin-right: 7rem;
     }
 }
-
 @media only screen and (max-width: 56.25em) {
     .feature__right {
     width: 100%;
@@ -352,6 +376,14 @@
     width: 80%;
     transform: translateY(35rem);
     text-align: center;
+    }
+
+    .feature__right h1{  
+        font-size: 2.8rem;
+    }
+
+    .feature__right p{  
+        font-size: 1.6rem;
     }
 }
 .feature__btn {

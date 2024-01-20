@@ -7,6 +7,11 @@
     padding: 12rem 0;
     width: 100%;
 }
+@media only screen and (max-width: 81.25em) {
+    .home {
+    padding: 12rem 0 15rem 0;
+    }
+} 
 @media only screen and (max-width: 56.25em) {
     .home {
     padding: 8rem 0 15rem 0;
@@ -30,11 +35,10 @@
     font-size: 2.8rem;
     color: hsl(229, 8%, 60%);
 }
-@media only screen and (max-width: 56.25em) { 
+@media only screen and (max-width: 81.25em) {
     .home__left { 
-        max-width: 63rem;
+        max-width: 43rem;
         width: 100%;
-        margin-bottom: 2rem;
     }
     .home__left h1 { 
         font-size: 4.5rem;
@@ -42,12 +46,18 @@
     .home__left p{ 
         font-size: 2.2rem;
     }
+} 
+@media only screen and (max-width: 56.25em) { 
+    .home__left { 
+        max-width: 63rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 28.125em) {
     .home__left {
     width: 100%;
-    max-width: 35rem;
+    max-width: 30rem;
     transform: translateY(34rem);
     text-align: center;
     }
@@ -107,7 +117,6 @@
 }
 @media only screen and (max-width: 56.25em) { 
     .home__right {
-    max-width: 70rem;
     width: 100%;
     }
 }
@@ -124,12 +133,14 @@
 }
 @media only screen and (max-width: 56.25em) {
     .home__right--bg__pic {
-    right:1%;
+        left:7%;
+        max-width: 75rem;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .home__right--bg__pic {
-    left: 1%;
+    left: 5%;
+    max-width: 38rem;
     }
 }
 
@@ -143,19 +154,23 @@
     border-radius: 0 0 0 12rem;
     background-color: hsl(231, 69%, 60%);
 }
-
+@media only screen and (max-width: 81.25em) {
+    .home__right--sketch { 
+        top: 22%;
+        width: 80%; 
+        height: 35rem;
+        }
+} 
 @media only screen and (max-width: 56.25em) {
     .home__right--sketch { 
-    top: 22%;
-    width: 85%; 
-    left: 25%;
+    width: 70%; 
     height: 38rem;
     }
 }
 @media only screen and (max-width: 28.125em) {
     .home__right--sketch { 
-    left: 22%;
-    top: 8rem;
-    height:22rem;
+    top: 6rem;
+    width: 80%; 
+    height:20rem;
     }
 }

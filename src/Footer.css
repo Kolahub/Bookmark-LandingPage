@@ -19,11 +19,11 @@
   max-width: 130rem;
   margin: 0 auto;
 }
-@media only screen and (max-width: 56.25em) {
-  .footer--container {
-    max-width: 76rem;
-  }
-}
+@media only screen and (max-width: 81.25em) {
+    .footer--container {
+        max-width: 85%;
+      }
+} 
 @media only screen and (max-width: 28.125em) {
   .footer--container {
     flex-direction: column;
