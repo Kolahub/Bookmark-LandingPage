@@ -1,26 +1,32 @@
 .pricing {
-  padding:0 0 15rem 0;
-  @media only screen and (max-width: 56.25em) {
+  padding: 0 0 15rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .pricing {
     margin-top: 22rem;
   }
-  @media only screen and (max-width: 28.125em) {
-    padding:0 0 10rem 0;
+}
+@media only screen and (max-width: 28.125em) {
+  .pricing {
+    padding: 0 0 10rem 0;
   }
 }
 .pricing__exTypo {
   text-align: center;
   max-width: 50rem;
   margin: 4rem auto 10rem auto;
-  h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: hsl(229, 31%, 21%);
-  }
-  p {
-    font-size: 1.8rem;
-    color: hsl(229, 8%, 60%);
-  }
-  @media only screen and (max-width: 28.125em) {
+}
+.pricing__exTypo h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(229, 31%, 21%);
+}
+.pricing__exTypo p {
+  font-size: 1.8rem;
+  color: hsl(229, 8%, 60%);
+}
+@media only screen and (max-width: 28.125em) {
+  .pricing__exTypo {
     width: 80%;
   }
 }
@@ -32,17 +38,19 @@
   align-items: center;
   max-width: 80rem;
   margin: 0 auto;
-  h2 {
-    font-size: 1.5rem;
-    color: hsl(229, 31%, 21%);
-    margin: 2rem 0 0.6rem 0;
-  }
-  p {
-    font-size: 1.2rem;
-    color: hsl(229, 8%, 60%);
-    margin: 0;
-  }
-  @media only screen and (max-width: 28.125em) {
+}
+.pricing__exGrid h2 {
+  font-size: 1.5rem;
+  color: hsl(229, 31%, 21%);
+  margin: 2rem 0 0.6rem 0;
+}
+.pricing__exGrid p {
+  font-size: 1.2rem;
+  color: hsl(229, 8%, 60%);
+  margin: 0;
+}
+@media only screen and (max-width: 28.125em) {
+  .pricing__exGrid {
     grid-template-columns: 1fr;
     transform: translateY(8rem);
   }
@@ -55,34 +63,23 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1.2rem;
 }
-.ex--con {
-  /* @media only screen and (max-width: 28.125em) { 
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%, -50%);
-    } */
-}
-.ex--pic {
-  /* @media only screen and (max-width: 28.125em) { 
-        width: 25rem;
-    } */
-}
 .ex--1 {
   margin-top: -12rem;
-  @media only screen and (max-width: 28.125em) {
-    margin-bottom: 2rem;
-  }
 }
 .ex--2 {
   margin-top: -4rem;
-  @media only screen and (max-width: 28.125em) {
-    margin-top: 2rem;
-  }
 }
 .ex--3 {
   margin-top: 4rem;
-  @media only screen and (max-width: 28.125em) {
+}
+@media only screen and (max-width: 28.125em) {
+  .ex--1 {
+    margin-bottom: 2rem;
+  }
+  .ex--2 {
+    margin-top: 2rem;
+  }
+  .ex--3 {
     margin-bottom: 18rem;
   }
 }
@@ -91,16 +88,10 @@
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* @media only screen and (max-width: 28.125em) { 
-        top: 50%;
-    } */
 }
 
 .dotted--line__pic {
   width: 22rem;
-  /* @media only screen and (max-width: 28.125em) { 
-    width: 52rem;
-} */
 }
 .ex--btn {
   position: absolute;
@@ -113,13 +104,6 @@
   padding: 1rem;
   margin: auto;
   width: 50%;
-  /* @media only screen and (max-width: 28.125em) { 
-        width: 80%; 
-        height: 5rem;
-        line-height: 5rem;
-        text-align: center;
-        font-size: 3rem;
-    } */
 }
 .ex--btn:hover {
   border: 0.2rem solid hsl(231, 69%, 60%);
@@ -130,31 +114,33 @@
   margin: 0 auto;
   max-width: 50rem;
   margin-top: 9rem;
-  @media only screen and (max-width: 28.125em) { 
+}
+@media only screen and (max-width: 28.125em) {
+  .pricing__faq {
     margin-top: 0;
     width: 80%;
-    }
+  }
 }
 .pricing__faq--typo {
   text-align: center;
-  h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: hsl(229, 31%, 21%);
-  }
-  p {
-    font-size: 1.8rem;
-    color: hsl(229, 8%, 60%);
-  }
+}
+.pricing__faq--typo h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(229, 31%, 21%);
+}
+.pricing__faq--typo p {
+  font-size: 1.8rem;
+  color: hsl(229, 8%, 60%);
 }
 .pricing__faq--main {
   margin-top: 5rem;
 }
 .selectfield {
   border-bottom: 0.5px solid hsl(229, 8%, 60%);
-  &:first-child {
-    border-top: 0.1rem solid hsl(229, 8%, 60%) !important;
-  }
+}
+.selectfield:first-child {
+  border-top: 0.1rem solid hsl(229, 8%, 60%) !important;
 }
 .selectquestion {
   display: flex;
@@ -186,15 +172,17 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.1s;
-  @media only screen and (max-width: 28.125em) { 
+}
+.faqMoreInfor__btn:hover {
+  border: 0.2rem solid hsl(231, 69%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+}
+@media only screen and (max-width: 28.125em) {
+  .faqMoreInfor__btn {
     width: 16rem;
     height: 5rem;
     font-size: 1.8rem;
-    }
-  &:hover {
-    border: 0.2rem solid hsl(231, 69%, 60%);
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(231, 69%, 60%);
   }
 }
 .hidden {
