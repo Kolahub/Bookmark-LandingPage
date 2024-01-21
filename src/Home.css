@@ -140,7 +140,7 @@
 @media only screen and (max-width: 28.125em) {
     .home__right--bg__pic {
     left: 5%;
-    max-width: calc(100vw - 2rem);
+    max-width: calc(99vw - 1.8rem);
     }
 }
 

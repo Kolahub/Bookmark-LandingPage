@@ -5,14 +5,14 @@ import { useState, useRef } from 'react';
 import validator from 'validator';
 
 function Contact() {
-  const [inputValue, setInputValue] = useState('')
+  const [email, setEmail] = useState('')
   const [validEmail, setValidEmail] = useState(true)
   const myElementRef = useRef([])
     const handleSubmit = (e) => {
       e.preventDefault()
-      const isValid = validator.isEmail('example@example.com');
+      const isValid = validator.isEmail(email);
       setValidEmail(isValid);
-      if (inputValue === '' || !isValid) {
+      if (email === '' || !isValid) {
         myElementRef.current.forEach((ref) => {
           ref.classList.remove("hidden")
         })
@@ -20,11 +20,11 @@ function Contact() {
           myElementRef.current.forEach((ref) => {
             ref.classList.add("hidden")
           })}, 3000)
-          setInputValue ("")
+          setEmail ("")
       }
       else {
         alert(`Thank you for your message! We will get back to you soon.`);
-        setInputValue ("")
+        setEmail ("")
       }
     }
   return (
@@ -38,7 +38,7 @@ function Contact() {
       </div>
       <div className="contact--main">
         <div className="input--section">
-        <input type="email" placeholder='example@gmail.com' value={inputValue} onChange = {(e) => setInputValue(e.target.value)}/>
+        <input type="email" placeholder='example@gmail.com' value={email} onChange = {(e) => setEmail(e.target.value)}/>
         <div className="errMsg--box hidden" ref={(el) => (myElementRef.current[0] = el)}>
         </div>
         <p className='errMsg--box--text hidden' ref={(el) => (myElementRef.current[1] = el)}><i>whoops make sure it's an email</i></p>
@@ -47,7 +47,6 @@ function Contact() {
         </div>
         </div>
         <div className="contactUS__btn" onClick={handleSubmit}>Contact Us</div>
-        {!validEmail && <p>Please enter a valid email address.</p>}
       </div>
       </div>
     </div>
