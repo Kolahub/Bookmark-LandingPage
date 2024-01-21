@@ -5,6 +5,7 @@ import Pricing from './Pricing';
 import Contact from './Contact';
 import Home from './Home';
 import Footer from './Footer';
+
 // import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {

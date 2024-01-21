@@ -58,7 +58,7 @@
     .home__left {
     width: 100%;
     max-width: 30rem;
-    transform: translateY(34rem);
+    transform: translateY(36rem);
     text-align: center;
     }
     .home__left h1 {
@@ -134,13 +134,13 @@
 @media only screen and (max-width: 56.25em) {
     .home__right--bg__pic {
         left:7%;
-        max-width: 75rem;
+        max-width: calc(100vw - 10rem);
     }
 }
 @media only screen and (max-width: 28.125em) {
     .home__right--bg__pic {
     left: 5%;
-    max-width: 38rem;
+    max-width: calc(100vw - 2rem);
     }
 }
 
@@ -149,28 +149,29 @@
     z-index: -1;
     top: 30%;
     right: 0;
-    width:75%;
+    width:100%;
+    max-width: 75%;
     height:35rem;
     border-radius: 0 0 0 12rem;
     background-color: hsl(231, 69%, 60%);
 }
 @media only screen and (max-width: 81.25em) {
     .home__right--sketch { 
-        top: 22%;
-        width: 80%; 
+        top: calc(10% + 6rem);
+        max-width: 80%; 
         height: 35rem;
         }
 } 
 @media only screen and (max-width: 56.25em) {
     .home__right--sketch { 
-    width: 70%; 
-    height: 38rem;
+    max-width: 70%; 
+    height:calc(80% - 4rem);
     }
 }
 @media only screen and (max-width: 28.125em) {
     .home__right--sketch { 
-    top: 6rem;
-    width: 80%; 
-    height:20rem;
+    top: calc(10% + 4rem);
+    max-width: 80%; 
+    height:calc(80% - 3rem);
     }
 }

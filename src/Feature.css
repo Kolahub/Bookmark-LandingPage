@@ -246,8 +246,8 @@
 
 @media only screen and (max-width: 28.125em) { 
     .feature__left span {  
-        height:23rem;
-        top: 6rem;
+        height:calc(80% - .5rem);
+        top: calc(10% + 6rem);
         right: -60%;
     }
 }
@@ -262,12 +262,6 @@
     }
 }
 
-.feature__tab--preview__one--left__con {
-    @media only screen and (max-width: 28.125em) { 
-        position: relative;
-        left: 10% !important;
-    }
-} 
 @media only screen and (max-width: 81.25em) { 
     .feature__tab--preview__one--left__con {
         position: relative;
@@ -286,7 +280,7 @@
 }
 @media only screen and (max-width: 28.125em) { 
     .tabMain { 
-    left: 20%;
+    left: calc(25% - 2rem);
     top: -2rem;
     }
 }
@@ -306,9 +300,9 @@
 }
 @media only screen and (max-width: 28.125em) {
     .tabSpan {
-        top: 10rem !important;
+        top: calc(10% + 5.5rem) !important;
         width:38rem !important;
-        height:20rem !important;
+        height:calc(80% - 3.5rem) !important;
     }
 }
 .feature__tab--preview__two--left__pic {
@@ -342,7 +336,7 @@
 }
 @media only screen and (max-width: 28.125em) { 
     .feature__pic {
-    width: 38rem;
+    width: calc(100vw - 5rem);
     }
 }
 @media only screen and (max-width: 81.25em) {
