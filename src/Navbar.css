@@ -38,15 +38,14 @@
     @media only screen and (max-width: 28.125em) { 
         .navigation__button {
         display: block;
-        height: 0;
-        width: 0;
-        top: .7rem;
-        right: .4rem;
-        transform: scale(.6);
+        top: 5.6rem;
+        right: 1.8rem;
         position: fixed;
-        border-radius: 50%;
-        text-align: center;
         z-index: 2000;
+        padding-top: 1.6rem;
+        padding-bottom: .6rem;
+        transform: translateY(-1.6rem);
+        border: 1px solid red;
         }
     }
 .navigation__links {
@@ -149,8 +148,6 @@
             }
       .navigation__icon {
         position: relative;
-        margin-top: 8rem;
-        right: 5.8rem;
 }
         .navigation__icon, .navigation__icon::before, .navigation__icon::after {
           width: 3rem;
