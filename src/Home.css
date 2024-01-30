@@ -150,16 +150,16 @@
     top: 30%;
     right: 0;
     width:100%;
-    max-width: 75%;
-    height:35rem;
+    max-width: calc(100% - 12rem); 
+    height: calc(70% - 4rem);
     border-radius: 0 0 0 12rem;
     background-color: hsl(231, 69%, 60%);
 }
 @media only screen and (max-width: 81.25em) {
     .home__right--sketch { 
         top: calc(10% + 6rem);
-        max-width: 80%; 
-        height: 35rem;
+        max-width: calc(100% - 10rem); 
+        height: calc(78% - 4rem);
         }
 } 
 @media only screen and (max-width: 56.25em) {

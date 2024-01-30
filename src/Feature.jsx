@@ -65,14 +65,14 @@ function Feature() {
             displayA && (
               <div className="feature__tab--preview__one feature__con">
               <div className="feature__tab--preview__one--left feature__left">
-                <div className="feature__tab--preview__one--left__con">
+                <div className="feature__tab--preview__one--left__con feature__tab">
                   <img
                     className="feature__tab--preview__one--left__pic feature__pic"
                     src={featurePicOne}
                     alt=""
                   />
                 </div>
-                <span></span>
+                <span className="tabSpanFirst"></span>
               </div>
               <div className="feature__tab--preview__one--right feature__right">
                 <h1 className="">BookMark in One Click</h1>
@@ -92,7 +92,7 @@ function Feature() {
                 <div className="feature__tab--preview__two--left feature__left">
                   <div className="tabMain">
                     <img
-                      className="feature__tab--preview__two--left__pic feature__pic"
+                      className="feature__tab--preview__two--left__pic feature__picc"
                       src={featurePicTwo}
                       alt=""
                     />
@@ -117,7 +117,7 @@ function Feature() {
                 <div className="feature__tab--preview__three--left feature__left">
                   <div className="tabMain">
                     <img
-                      className="feature__tab--preview__three--left__pic feature__pic"
+                      className="feature__tab--preview__three--left__pic feature__picc"
                       src={featurePicThree}
                       alt=""
                     />

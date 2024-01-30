@@ -1,16 +1,11 @@
 .feature {
-    max-width: 130rem;
-    margin: 0 auto;
     padding: 0 0 15rem 0;
 }
 @media only screen and (max-width: 56.25em) {
-    .feature {
-    max-width: 70rem;
-    }
 }
 @media only screen and (max-width: 28.125em) {
     .feature {
-    padding: 0 0 20rem 0; 
+    padding: 0 0 10rem 0; 
     }
 }
 .feature__header {
@@ -202,18 +197,19 @@
 }
 
 .feature__tab--preview {
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .feature__con {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10%;
     align-items: center;
     margin-top: 4rem;
 }
 @media only screen and (max-width: 56.25em) {
     .feature__con {
     display: block;
-    margin-top: -22rem;
+    margin-top: -22%;
     }
 }
 
@@ -222,35 +218,6 @@
     width: 50%;
     height: auto;
 }
-
-.feature__left span { 
-    position:absolute;
-    z-index: -1;
-    top: 10rem;
-    right:25%;
-    width:70rem;
-    height:37rem;
-    border-radius: 0 0 12rem 0;
-    background-color: hsl(231, 69%, 60%);
-}
-@media only screen and (max-width: 81.25em) { 
-    .feature__left span {  
-        right: 10%;
-    }
-}
-@media only screen and (max-width: 56.25em) { 
-    .feature__left span {  
-        right: -40%;
-    }
-}
-
-@media only screen and (max-width: 28.125em) { 
-    .feature__left span {  
-        height:calc(80% - .5rem);
-        top: calc(10% + 6rem);
-        right: -60%;
-    }
-}
 @media only screen and (max-width: 56.25em) { 
     .feature__left{ 
         transform: translateY(20rem);
@@ -258,95 +225,103 @@
 }
 @media only screen and (max-width: 28.125em) { 
     .feature__left{ 
-        transform: translateY(28rem);
-    }
-}
-
-@media only screen and (max-width: 81.25em) { 
-    .feature__tab--preview__one--left__con {
-        position: relative;
-        left: 10%;
-    }
-}
-.tabMain {
-    position: relative;
-    left: 20%;
-    top: -1rem;
-}
-@media only screen and (max-width: 81.25em) { 
-    .tabMain {
-        left: 12%;
-    }
-}
-@media only screen and (max-width: 28.125em) { 
-    .tabMain { 
-    left: calc(25% - 2rem);
-    top: -2rem;
-    }
-}
-.tabSpan {
-    top: 11rem;
-    right:5%;
-    width:100rem;
-    height:37rem;
-}
-@media only screen and (max-width: 81.25em) { 
-    .tabSpan {
-        top: 18rem !important;
-        left:-15%;
-        height:38rem !important;
-    }
-
-}
-@media only screen and (max-width: 28.125em) {
-    .tabSpan {
-        top: calc(10% + 5.5rem) !important;
-        width:38rem !important;
-        height:calc(80% - 3.5rem) !important;
-    }
-}
-.feature__tab--preview__two--left__pic {
-    width: 56rem important;
-}
-@media only screen and (max-width: 56.25em) {
-    .feature__tab--preview__two--left__pic {
-    width: 58rem important;
-    }
-}
-@media only screen and (max-width: 28.125em) {
-    .feature__tab--preview__two--left__pic { 
-    width: 36rem !important;
-    }
-}
-.feature__tab--preview__three--left__pic {
-    width: 56rem important;
-}
-@media only screen and (max-width: 56.25em) {
-    .feature__tab--preview__three--left__pic {
-    width: 58rem important;
-    }
-}
-@media only screen and (max-width: 28.125em) {
-    .feature__tab--preview__three--left__pic { 
-        width: 36rem !important;
+        transform: translateY(18rem);
     }
 }
 .feature__pic {
-    width: 65rem;
+    position: relative;
+    left: calc(10% + 8rem);
+    width: calc(100% - 15rem);
 }
 @media only screen and (max-width: 28.125em) { 
     .feature__pic {
-    width: calc(100vw - 5rem);
+    width: calc(100vw - 8rem) !important;
     }
 }
-@media only screen and (max-width: 81.25em) {
+@media only screen and (max-width: 56.25em) { 
     .feature__pic {
-        right: 50%;
-        }
+    width: calc(100vw - 20rem);
+    left: calc(10% + 2rem);
+    }
 }
+.tabSpanFirst { 
+    position:absolute;
+    z-index: -1;
+    top: calc(10% + 6rem);
+    left: 0;
+    width: calc(100% - 18rem);
+    height: calc(100% - 6rem);
+    border-radius: 0 0 12rem 0;
+    background-color: hsl(231, 69%, 60%);
+}
+.feature__picc {
+    position: relative;
+    left: calc(15% + 10rem);
+    width: calc(100% - 20rem);
+    height: calc(90% - 2rem);
+}
+@media only screen and (max-width: 56.25em) { 
+    .feature__picc { 
+        width: calc(100vw - 25rem);
+    }
+}
+@media only screen and (max-width: 28.125em) { 
+    .feature__picc { 
+        width: calc(100vw - 8rem);
+        left: calc(10% + 4rem);
+    }
+}
+.tabSpan {
+    position:absolute;
+    z-index: -1;
+    top: calc(10% + 6rem);
+    left: 0;
+    width: calc(100% - 14rem);
+    height: calc(100% - 10rem);
+    border-radius: 0 0 12rem 0;
+    background-color: hsl(231, 69%, 60%);
+}
+
+@media only screen and (max-width: 81.25em) { 
+    .tabSpan {  
+        width: calc(100% - 6rem);
+        top: calc(10% + 9rem);
+    }
+}
+@media only screen and (max-width: 56.25em) { 
+    .tabSpan {
+        width: calc(100% + 18rem);
+        height: calc(100% - 12rem);
+        top: calc(10% + 7rem);
+    }
+}
+@media only screen and (max-width: 28.125em) { 
+    .tabSpan {
+        width: calc(100% + 12rem);
+        top: calc(10% + 8rem);
+    }
+}
+@media only screen and (max-width: 81.25em) { 
+    .tabSpanFirst {  
+        width: calc(100% - 6rem);
+    }
+}
+@media only screen and (max-width: 56.25em) { 
+    .tabSpanFirst {  
+        width: calc(100% + 18rem);
+    }
+}
+@media only screen and (max-width: 28.125em) { 
+    .tabSpanFirst {  
+        height: calc(98% - 2rem);
+        width: calc(100% + 12rem);
+        top: calc(10% + 4rem);
+    }
+}
+
 .feature__right {
     width: 50%;
-    max-width: 50rem;
+    max-width:45rem;
 }
 .feature__right h1{ 
     font-size: 3.5rem;
@@ -358,10 +333,13 @@
 }
 @media only screen and (max-width: 81.25em) {
     .feature__right {
-    width: 100%;
-    max-width: 45rem;
-    margin: 0 auto;
-    margin-right: 7rem;
+    max-width: 35rem;
+    }
+    .feature__right h1{  
+        font-size: 3rem;
+    }
+    .feature__right p{  
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width: 56.25em) {
@@ -375,7 +353,7 @@
 @media only screen and (max-width: 28.125em) {
     .feature__right {
     width: 80%;
-    transform: translateY(35rem);
+    transform: translateY(25rem);
     text-align: center;
     }
 
