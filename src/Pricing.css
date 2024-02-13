@@ -3,7 +3,8 @@
 }
 @media only screen and (max-width: 56.25em) {
   .pricing {
-    margin-top: 22rem;
+    /* margin-top: 22rem; */
+    padding: 12rem 0;
   }
 }
 @media only screen and (max-width: 28.125em) {
@@ -189,4 +190,22 @@
   transform: rotate(180deg);
   filter: invert(51%) sepia(74%) saturate(1334%) hue-rotate(323deg)
     brightness(100%) contrast(100%);
+}
+
+/*<========================== MEDIA QUERIES ===============================>*/
+/* TAB-LAND */
+@media only screen and (max-width: 81.25em) { 
+
+}
+/* TAB-PORT */
+@media only screen and (max-width: 81.25em) { 
+
+}
+/* PHONE */
+@media only screen and (max-width: 37.5em) { 
+
+}
+/* PHONE-PORT */
+@media only screen and (max-width: 28.125em) { 
+
 }

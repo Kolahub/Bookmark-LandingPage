@@ -4,51 +4,25 @@
   right: 0;
   bottom: 0;
   background-color: hsl(229, 31%, 21%);
-}
-@media only screen and (max-width: 28.125em) {
-  .footer {
-    padding: 15rem 0 30rem 0;
-  }
+  padding: 5rem 0;
 }
 .footer--container {
   width: auto;
-  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 130rem;
   margin: 0 auto;
 }
-@media only screen and (max-width: 81.25em) {
-    .footer--container {
-        max-width: 85%;
-      }
-} 
-@media only screen and (max-width: 28.125em) {
-  .footer--container {
-    flex-direction: column;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
 .footer--left {
   display: flex;
   align-items: center;
-}
-@media only screen and (max-width: 28.125em) {
-  .footer--left {
-    flex-direction: column;
-  }
 }
 .footer .footer__links {
   margin-left: auto;
 }
 @media only screen and (max-width: 28.125em) {
-  .footer .footer__links {
-    padding: 1.6rem 1.5rem 1.6rem 1rem;
-  }
+
 }
 .footer__menu {
   display: flex;
@@ -64,18 +38,12 @@
   text-align: center;
 }
 .footer a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
-  margin-right: 3rem;
+  margin-right: 2rem;
   text-decoration: none;
   padding: 6px;
-}
-@media only screen and (max-width: 28.125em) {
-  .footer a {
-    font-size: 2.5rem;
-    line-height: 1.8;
-  }
 }
 .navbar .a:visited,
 a:hover,
@@ -89,12 +57,59 @@ a:active {
   filter: invert(54%) sepia(98%) saturate(1323%) hue-rotate(320deg)
     brightness(105%) contrast(105%);
 }
-@media only screen and (max-width: 28.125em) {
-  .footer--right {
-    margin-left: 2.5rem;
+
+/*<========================== MEDIA QUERIES ===============================>*/
+/* TAB-LAND */
+@media only screen and (max-width: 81.25em) { 
+  .footer--container {
+    max-width: 85%;
+  }
+}
+/* TAB-PORT */
+@media only screen and (max-width: 56.25em) { 
+  .footer a { 
+    font-size: 2.2rem;
+  }
+}
+/* PHONE */
+@media only screen and (max-width: 37.5em) { 
+  .footer--container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .footer__menu {
+    margin-left: -3rem;
+  }
+  .footer a {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-right: 1rem;
+  }
+
+  .footer--right img{ 
+    width: 3.5rem;
   }
   .footer--right img:not(:last-child) {
-    margin-right: 5rem;
-    width: 4rem;
+    margin-right: 6rem;
+  }
+}
+/* PHONE-PORT */
+@media only screen and (max-width: 28.125em) { 
+  .footer {
+    padding: 10rem 0;
+  }
+  .footer--container {
+    gap: 1rem;
+  }
+  .footer--left {
+    flex-direction: column;
+  }
+
+  .footer .footer__links {
+    padding: 1.6rem 1.5rem 1.6rem 1rem;
+  }
+
+  .footer--right {
+    margin-left: 2.5rem;
   }
 }

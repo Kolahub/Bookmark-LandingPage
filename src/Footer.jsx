@@ -11,7 +11,9 @@ function footer() {
     <div className='footer'>
         <div className="footer--container">
         <div className="footer--left">
-        <img src={bookmarkLogo} alt="" />
+          <div className="footer--left__img">
+          <img src={bookmarkLogo} alt="" />
+          </div>
         <div className="footer__links">
               <ul className="footer__menu">
               <li className="footer__item"> <Link to='feature' spy={true} smooth={true} offset={-105} duration={500} >Features</Link></li>

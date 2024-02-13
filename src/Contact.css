@@ -111,3 +111,21 @@
     padding: 0 .1rem;
   }
 }
+
+/*<========================== MEDIA QUERIES ===============================>*/
+/* TAB-LAND */
+@media only screen and (max-width: 81.25em) { 
+
+}
+/* TAB-PORT */
+@media only screen and (max-width: 81.25em) { 
+
+}
+/* PHONE */
+@media only screen and (max-width: 37.5em) { 
+
+}
+/* PHONE-PORT */
+@media only screen and (max-width: 28.125em) { 
+
+}
