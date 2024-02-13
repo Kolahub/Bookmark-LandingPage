@@ -22,11 +22,6 @@
 .contact--typo h1 {
   font-size: 3.5rem;
 }
-@media only screen and (max-width: 28.125em) { 
-  .contact--typo h1 {
-    font-size: 3rem;
-  }
-}
 .contact--main {
   display: flex;
   justify-content: space-between;
@@ -92,6 +87,38 @@
 }
 
 @media only screen and (max-width: 28.125em) {
+
+}
+
+/*<========================== MEDIA QUERIES ===============================>*/
+/* TAB-LAND */
+@media only screen and (max-width: 81.25em) { 
+
+}
+/* TAB-PORT */
+@media only screen and (max-width: 56.25em) { 
+  .contact--container {
+    max-width: 50rem;
+  }
+  .contact--typo p { 
+    font-size: 1.8rem;
+  }
+
+  .contact--typo h1 {
+    font-size: 3.2rem;
+  }
+
+  .contactUS__btn { 
+    width: 15rem;
+    font-size: 2rem;
+  }
+}
+/* PHONE */
+@media only screen and (max-width: 37.5em) { 
+
+}
+/* PHONE-PORT */
+@media only screen and (max-width: 28.125em) { 
   .contact--main {
     flex-direction: column;
   }
@@ -110,22 +137,4 @@
     margin-top: 2rem;
     padding: 0 .1rem;
   }
-}
-
-/*<========================== MEDIA QUERIES ===============================>*/
-/* TAB-LAND */
-@media only screen and (max-width: 81.25em) { 
-
-}
-/* TAB-PORT */
-@media only screen and (max-width: 81.25em) { 
-
-}
-/* PHONE */
-@media only screen and (max-width: 37.5em) { 
-
-}
-/* PHONE-PORT */
-@media only screen and (max-width: 28.125em) { 
-
 }

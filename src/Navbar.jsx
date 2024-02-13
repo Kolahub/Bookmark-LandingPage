@@ -16,9 +16,9 @@ function Navbar() {
               <div className="navigation__links">
                 <div className="navigation__items">
                 <ul className="navigation__menu">
-              <li className="navigation__item"><Link to='feature' spy={true} smooth={true} offset={-105} duration={500} className='navigation__lists'>Features</Link></li>
-              <li className="navigation__item"><Link to='pricing' spy={true} smooth={true} offset={-105} duration={500} className='navigation__lists'>Pricing</Link></li>
-              <li className="navigation__item"><Link to='contact' spy={true} smooth={true} offset={-105} duration={500} className='navigation__lists'>Contact</Link></li>
+              <li className="navigation__item"><Link to='feature' spy={true} smooth={true} offset={40} duration={500} className='navigation__lists'>Features</Link></li>
+              <li className="navigation__item"><Link to='pricing' spy={true} smooth={true} offset={40} duration={500} className='navigation__lists'>Pricing</Link></li>
+              <li className="navigation__item"><Link to='contact' spy={true} smooth={true} offset={40} duration={500} className='navigation__lists'>Contact</Link></li>
               </ul>
               <div className="btn btn__login">Login</div>
                 </div>

@@ -1,5 +1,5 @@
 .feature {
-    padding: 0 0 15rem 0;
+    padding: 12rem 0 0 0;
 }
 .feature__header {
     text-align: center;
@@ -89,7 +89,7 @@
 .feature__picc {
     position: relative;
     left: calc(25% - 4rem);
-    width: calc(100% - 10rem);
+    width: calc(85% - 5rem);
     height: calc(90% - 2rem);
 }
 .tabSpan {
@@ -97,8 +97,8 @@
     z-index: -1;
     top: calc(14% + 12rem);
     left: 0;
-    width: calc(100% - 10rem);
-    height: calc(100% - 16rem);
+    width: calc(85% - 5rem);
+    height: calc(80% - 6rem);
     border-radius: 0 0 12rem 0;
     background-color: hsl(231, 69%, 60%);
 }
@@ -125,6 +125,7 @@
     border-radius: .5rem;
     color: rgb(255, 255, 255);
     font-size: 1.6rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all .1s;
 }
@@ -142,6 +143,9 @@
 }
 /* TAB-PORT */
 @media only screen and (max-width: 56.25em) { 
+    .feature {
+        margin-top: -6rem;
+        }
     .feature__header { 
         max-width: 80%;
     }
@@ -172,7 +176,7 @@
             }
 
             .feature__picc { 
-                width: 70%;
+                width: 65%;
                 left: calc(10% + 10rem);
                 height: auto;
             }
@@ -198,6 +202,10 @@
                 }
                 .feature__right p{  
                     font-size: 2.2rem;
+                }
+
+                .feature__btn { 
+                    font-size: 1.8rem;
                 }
 }
 /* PHONE */
@@ -278,10 +286,6 @@
 }
 /* PHONE-PORT */
 @media only screen and (max-width: 28.125em) { 
-    .feature {
-        padding: 0 0 10rem 0; 
-        }
-
         .feature__pic {
             width: calc(42vw + 15rem);
             left: calc(6% + 1rem);

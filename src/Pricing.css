@@ -1,21 +1,11 @@
 .pricing {
-  padding: 0 0 15rem 0;
+  padding: 12rem 0;
 }
-@media only screen and (max-width: 56.25em) {
-  .pricing {
-    /* margin-top: 22rem; */
-    padding: 12rem 0;
-  }
-}
-@media only screen and (max-width: 28.125em) {
-  .pricing {
-    padding: 0 0 10rem 0;
-  }
-}
+
 .pricing__exTypo {
   text-align: center;
-  max-width: 50rem;
-  margin: 4rem auto 10rem auto;
+  max-width: 60%;
+  margin: 0 auto;
 }
 .pricing__exTypo h1 {
   font-size: 2.5rem;
@@ -23,47 +13,47 @@
   color: hsl(229, 31%, 21%);
 }
 .pricing__exTypo p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: hsl(229, 8%, 60%);
 }
-@media only screen and (max-width: 28.125em) {
-  .pricing__exTypo {
-    width: 80%;
-  }
-}
+
 .pricing__exGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
+  column-gap: 2rem;
   justify-items: center;
   align-items: center;
-  max-width: 80rem;
+  max-width: 84rem;
   margin: 0 auto;
+  transform: translateY(5rem);
 }
 .pricing__exGrid h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: hsl(229, 31%, 21%);
   margin: 2rem 0 0.6rem 0;
 }
 .pricing__exGrid p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: hsl(229, 8%, 60%);
   margin: 0;
 }
 @media only screen and (max-width: 46.5em) {
   .pricing__exGrid {
     grid-template-columns: 1fr;
-    transform: translateY(8rem);
-    row-gap: 2rem;
+    row-gap: 3rem;
+    transform: translateY(14rem);
   }
 }
 .ex {
   position: relative;
   width: 15rem;
   height: 25rem;
-  padding: 4rem 3rem 4rem 6rem;
+  padding: 4rem 5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ex--1 {
   margin-top: -12rem;
@@ -83,12 +73,11 @@
   }
   .ex--3 {
     margin-top: 0;
-    margin-bottom: 35%;
   }
 }
 .dotted--line {
   position: absolute;
-  top: 78%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -98,32 +87,28 @@
 }
 .ex--btn {
   position: absolute;
-  bottom: 2rem;
-  left: 5rem;
+  bottom: 2.5rem;
+  left: 3.5rem;
   color: white;
+  font-size: 1.4rem;
   font-weight: 600;
+  text-align: center;
   background-color: hsl(231, 69%, 60%);
   border-radius: 0.6rem;
-  padding: 1rem;
-  margin: auto;
-  width: 50%;
+  margin:0 auto;
+  padding: 1.2rem;
 }
 .ex--btn:hover {
-  border: 0.2rem solid hsl(231, 69%, 60%);
+  border: .2rem solid hsl(231, 69%, 60%);
   background-color: hsl(0, 0%, 100%);
   color: hsl(231, 69%, 60%);
 }
 .pricing__faq {
   margin: 0 auto;
   max-width: 50rem;
-  margin-top: 9rem;
+  margin-top: 20rem;
 }
-@media only screen and (max-width: 28.125em) {
-  .pricing__faq {
-    margin-top: 0;
-    width: 80%;
-  }
-}
+
 .pricing__faq--typo {
   text-align: center;
 }
@@ -137,7 +122,7 @@
   color: hsl(229, 8%, 60%);
 }
 .pricing__faq--main {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .selectfield {
   border-bottom: 0.5px solid hsl(229, 8%, 60%);
@@ -161,12 +146,12 @@
 .faqMoreInfor__btn {
   margin-top: 5rem;
   background-color: hsl(231, 69%, 60%);
-  width: 10rem;
-  height: 3rem;
+  width: 16rem;
+  height: 5rem;
   border: none;
   border-radius: 0.5rem;
   color: rgb(255, 255, 255);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.1s;
@@ -176,13 +161,7 @@
   background-color: hsl(0, 0%, 100%);
   color: hsl(231, 69%, 60%);
 }
-@media only screen and (max-width: 28.125em) {
-  .faqMoreInfor__btn {
-    width: 16rem;
-    height: 5rem;
-    font-size: 1.8rem;
-  }
-}
+
 .hidden {
   display: none;
 }
@@ -190,6 +169,7 @@
   transform: rotate(180deg);
   filter: invert(51%) sepia(74%) saturate(1334%) hue-rotate(323deg)
     brightness(100%) contrast(100%);
+    transition: transform .3s;
 }
 
 /*<========================== MEDIA QUERIES ===============================>*/
@@ -198,14 +178,69 @@
 
 }
 /* TAB-PORT */
-@media only screen and (max-width: 81.25em) { 
+@media only screen and (max-width: 56.25em) { 
+  .pricing {
+    padding: 10rem 0;
+    margin-top: -6rem;
+  }
 
+  .pricing__exTypo { 
+    max-width: 80%;
+  }
+
+  .pricing__exTypo h1 { 
+    font-size: 2.6rem;
+  }
+
+  .pricing__exTypo p { 
+    font-size: 2.2rem;
+  }
+
+  .pricing__exGrid { 
+    max-width: 98rem;
+    column-gap: 0;
+  }
+
+  .pricing__exGrid h2 { 
+    font-size: 2.4rem;
+  }
+
+  .pricing__exGrid p { 
+    font-size: 1.8rem;
+  }
+
+  .ex { 
+    width: 18rem;
+    height: 28rem;
+  }
+  .ex--btn { 
+    left: 5rem;
+  }
+  .pricing__faq--typo  h1{ 
+    font-size: 2.6rem;
+  }
+  .pricing__faq--typo p { 
+    font-size: 2.2rem;
+  }
+
+  .selectquestion { 
+    font-size: 2.2rem;
+  }
+  .selectanswer { 
+    font-size: 2rem;
+  }
+
+  .faqMoreInfor__btn {
+    font-size: 2rem;
+  }
 }
 /* PHONE */
 @media only screen and (max-width: 37.5em) { 
-
 }
 /* PHONE-PORT */
 @media only screen and (max-width: 28.125em) { 
 
+  .pricing__faq {
+    width: 80%;
+  }
 }

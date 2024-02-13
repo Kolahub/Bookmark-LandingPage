@@ -56,7 +56,7 @@ a:active {
   color: hsl(0, 94%, 66%);
 }
 .btn {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   width: 15rem;
   height: 4rem;
@@ -89,7 +89,6 @@ a:active {
     .navigation__menu { 
         gap: 1.8rem;
     }
-
     .btn { 
       width: 16rem;
     }
